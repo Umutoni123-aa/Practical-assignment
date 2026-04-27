@@ -1,13 +1,196 @@
-kigali-website/
-├── index.html
-├── nyamirambo.html
-├── kigali-city-tour.html
-├── restaurants.html
-├── kimironko.html
-├── README.md
-└── css/
-    ├── home.css
-    ├── nyamirambo.css
-    ├── city-tour.css
-    ├── restaurants.css
-    └── kimironko.css
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kigali Unlocked – Discover Rwanda's Capital</title>
+  <link rel="stylesheet" href="css/home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-logo">KIGALI <span>UNLOCKED</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="nyamirambo.html">Nyamirambo</a></li>
+      <li><a href="kigali-city-tour.html">City Tour</a></li>
+      <li><a href="restaurants.html">Eat & Drink</a></li>
+      <li><a href="kimironko.html">Kimironko</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Rwanda's Heartbeat</p>
+      <h1 class="hero-title">Discover<br/><span>Kigali</span></h1>
+      <p class="hero-subtitle">A city of hills, culture, flavour, and life. Your ultimate guide to the best of Rwanda's capital.</p>
+      <a href="nyamirambo.html" class="btn-primary">Start Exploring</a>
+    </div>
+    <div class="hero-scroll">↓ scroll</div>
+  </header>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <div class="intro-text">
+      <h2>Welcome to the City of a Thousand Hills</h2>
+      <p>Kigali is one of Africa's most vibrant, clean, and fast-growing cities. Whether you're looking for local street food, cultural landmarks, lively markets, or rooftop bars with panoramic views — this guide has everything you need to make the most of your visit.</p>
+      <p>Browse our curated destination pages to plan your perfect Kigali experience.</p>
+    </div>
+    <div class="intro-stats">
+      <div class="stat"><span>1.5M+</span><p>Residents</p></div>
+      <div class="stat"><span>3</span><p>Districts</p></div>
+      <div class="stat"><span>1,567m</span><p>Above Sea Level</p></div>
+      <div class="stat"><span>∞</span><p>Adventures</p></div>
+    </div>
+  </section>
+
+  <!-- DESTINATION CARDS -->
+  <section class="destinations">
+    <h2 class="section-title">Explore Destinations</h2>
+    <p class="section-sub">Four handpicked sections of Kigali, each with its own character</p>
+    <div class="cards-grid">
+
+      <a href="nyamirambo.html" class="card">
+        <div class="card-img" style="background-image:url('https://c7.alamy.com/comp/A7HN2P/muslim-quarter-in-the-nyamirambo-district-kigali-rwanda-A7HN2P.jpg')"></div>
+        <div class="card-body">
+          <span class="card-tag">Culture</span>
+          <h3>Nyamirambo</h3>
+          <p>The soul of Kigali — mosques, street art, local markets, and nightlife in the city's most authentic neighbourhood.</p>
+          <span class="card-link">Explore →</span>
+        </div>
+      </a>
+
+      <a href="kigali-city-tour.html" class="card">
+        <div class="card-img" style="background-image:url('https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/0b/f3/26.jpg')"></div>
+        <div class="card-body">
+          <span class="card-tag">Landmarks</span>
+          <h3>City Tour</h3>
+          <p>From the Kigali Genocide Memorial to the Art Gallery — explore the history and heart of Rwanda's capital.</p>
+          <span class="card-link">Explore →</span>
+        </div>
+      </a>
+
+      <a href="restaurants.html" class="card">
+        <div class="card-img" style="background-image:url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/6c/5e/01/experience-boho-restaurant.jpg?w=1000&h=-1&s=1')"></div>
+        <div class="card-body">
+          <span class="card-tag">Food & Drink</span>
+          <h3>Eat & Drink</h3>
+          <p>From upscale rooftop restaurants to brochette street stalls — Kigali's food scene is diverse and delicious.</p>
+          <span class="card-link">Explore →</span>
+        </div>
+      </a>
+
+      <a href="kimironko.html" class="card">
+        <div class="card-img" style="background-image:url('https://igihe.com/local/cache-vignettes/L1000xH667/c07a0167-2-8add9.jpg?1714022931')"></div>
+        <div class="card-body">
+          <span class="card-tag">Shopping</span>
+          <h3>Kimironko</h3>
+          <p>Kigali's biggest open-air market — vibrant colours, fresh produce, crafts, and the energy of everyday Kigali life.</p>
+          <span class="card-link">Explore →</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- QUICK TIPS TABLE -->
+  <section class="tips-section">
+    <h2 class="section-title">Visitor Quick Tips</h2>
+    <table class="tips-table">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Information</th>
+          <th>Recommendation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Currency</td><td>Rwandan Franc (RWF)</td><td>Carry cash for local markets</td></tr>
+        <tr><td>Language</td><td>Kinyarwanda, French, English</td><td>A few Kinyarwanda words go far!</td></tr>
+        <tr><td>Transport</td><td>Moto-taxis (motos), taxis, buses</td><td>Use SafeMotos app for safe rides</td></tr>
+        <tr><td>Best Time</td><td>June – September (dry season)</td><td>Ideal for outdoor activities</td></tr>
+        <tr><td>Plastic Bags</td><td>Banned in Rwanda</td><td>Bring reusable bags</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- HIGHLIGHTS LIST -->
+  <section class="highlights">
+    <div class="highlights-inner">
+      <div class="highlights-col">
+        <h3>Top Things To Do</h3>
+        <ol>
+          <li>Visit the Kigali Genocide Memorial</li>
+          <li>Explore Nyamirambo on foot</li>
+          <li>Shop at Kimironko Market</li>
+          <li>Hike to the Nyandungu Eco Park</li>
+          <li>Try Isombe at a local restaurant</li>
+        </ol>
+      </div>
+      <div class="highlights-col">
+        <h3>Must-Try Foods</h3>
+        <ul>
+          <li>Brochettes (grilled meat skewers)</li>
+          <li>Isombe (cassava leaves & eggplant)</li>
+          <li>Ugali with beans & plantain</li>
+          <li>Ikivuguto (fermented milk)</li>
+          <li>Mandazi (fried dough pastry)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / NEWSLETTER FORM -->
+  <section class="contact-section">
+    <h2>Stay in the Loop</h2>
+    <p>Get the latest travel tips and Kigali updates delivered to your inbox.</p>
+    <div class="form-wrap">
+      <input type="text" placeholder="Your Name" />
+      <input type="email" placeholder="Your Email" />
+      <select>
+        <option>Interested in...</option>
+        <option>Food & Restaurants</option>
+        <option>Culture & History</option>
+        <option>Shopping & Markets</option>
+        <option>Nightlife & Events</option>
+      </select>
+      <textarea placeholder="Any questions or comments?"></textarea>
+      <button type="button" class="btn-primary">Subscribe</button>
+    </div>
+  </section>
+
+  <!-- MAP EMBED -->
+  <section class="map-section">
+    <h2 class="section-title">Find Your Bearings</h2>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255203.55383057077!2d29.96243136624063!3d-1.9297626221657935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca4258ed8e797%3A0xf32b36a5411d0bc8!2sKigali!5e0!3m2!1sen!2srw!4v1777276050769!5m2!1sen!2srw"
+        width="100%" height="400" style="border:none; border-radius:12px;"
+        title="Map of Kigali, Rwanda"
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo">KIGALI <span>UNLOCKED</span></p>
+      <p>A student project exploring the best of Rwanda's capital city.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nyamirambo.html">Nyamirambo</a></li>
+        <li><a href="kigali-city-tour.html">City Tour</a></li>
+        <li><a href="restaurants.html">Eat & Drink</a></li>
+        <li><a href="kimironko.html">Kimironko</a></li>
+      </ul>
+      <p class="footer-note">© Umutoni Nada · Kigali, Rwanda · 2026</p>
+    </div>
+  </footer>
+
+</body>
+</html>
