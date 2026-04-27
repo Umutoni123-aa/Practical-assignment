@@ -31,7 +31,7 @@ body { background: var(--bg); color: var(--text); font-family: var(--font-body);
 .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
 
 /* PAGE HERO */
-.page-hero { position: relative; height: 70vh; background: url('https://images.unsplash.com/photo-1526958977630-b34e2b1e0e2c?w=1600') center/cover no-repeat; display: flex; align-items: flex-end; }
+.page-hero { position: relative; height: 70vh; background: url('https://images.unsplash.com/photo-1729607890704-7654211e40cd?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat; display: flex; align-items: flex-end; }
 .page-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.3) 70%); }
 .page-hero-content { position: relative; z-index: 2; padding: 4rem; animation: fadeUp 0.8s ease both; }
 .page-tag { font-size: 0.75rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 0.8rem; }
@@ -60,19 +60,6 @@ body { background: var(--bg); color: var(--text); font-family: var(--font-body);
 .zone-icon { font-size: 2.5rem; margin-bottom: 1.2rem; display: block; }
 .zone-card h3 { font-family: var(--font-display); font-size: 1.3rem; color: var(--text); margin-bottom: 0.8rem; }
 .zone-card p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; }
-
-/* VIDEO */
-.video-section { padding: 8rem 4rem; background: var(--bg2); }
-.video-wrap { margin-top: 2rem; }
-.video-wrap video { width: 100%; max-height: 480px; border: 1px solid var(--border); display: block; }
-
-/* AUDIO */
-.audio-section { padding: 8rem 4rem; background: var(--bg); }
-.audio-wrap { margin-top: 2rem; }
-.audio-card { display: inline-flex; align-items: center; gap: 2rem; background: var(--bg2); border: 1px solid var(--border); padding: 2rem 3rem; }
-.audio-card span { font-size: 2rem; }
-.audio-card p { color: var(--text); font-size: 1rem; }
-.audio-card small { color: var(--text-muted); font-size: 0.8rem; }
 
 /* TABLE */
 .table-section { padding: 8rem 4rem; background: var(--bg2); }

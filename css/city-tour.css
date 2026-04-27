@@ -1,6 +1,5 @@
 /* ===========================
-   CITY-TOUR.CSS
-   Dark & Dramatic Theme
+   CITY-TOUR.CSS – Kigali Unlocked
 =========================== */
 
 :root {
@@ -44,7 +43,7 @@ body { background: var(--bg); color: var(--text); font-family: var(--font-body);
 /* PAGE HERO */
 .page-hero {
   position: relative; height: 70vh;
-  background: url('https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=1600') center/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1706977870551-fc004e779dcd?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
   display: flex; align-items: flex-end;
 }
 .page-hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.3) 70%); }
@@ -85,12 +84,6 @@ body { background: var(--bg); color: var(--text); font-family: var(--font-body);
 .landmark-body p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; }
 .lm-meta { display: flex; gap: 2rem; flex-wrap: wrap; }
 .lm-meta span { font-size: 0.8rem; color: var(--text-muted); }
-
-/* VIDEO */
-.video-section { padding: 8rem 4rem; background: var(--bg2); }
-.video-wrap { margin-top: 2rem; }
-.video-wrap video { width: 100%; max-height: 480px; border: 1px solid var(--border); display: block; }
-
 /* AUDIO */
 .audio-section { padding: 8rem 4rem; background: var(--bg); }
 .audio-wrap { margin-top: 2rem; }

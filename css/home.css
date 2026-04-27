@@ -72,7 +72,7 @@ body {
 .hero {
   position: relative;
   height: 100vh;
-  background: url('https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=1600') center/cover no-repeat;
+  background: url('https://thumbs.dreamstime.com/b/kigali-rwanda-september-car-passes-city-centr-centre-roudabout-pension-plaza-surrounding-buildings-background-127528185.jpg') center/cover no-repeat;
   display: flex; align-items: center;
   overflow: hidden;
 }
