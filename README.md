@@ -1,51 +1,150 @@
-Kigali Unlocked 🌍
-Your ultimate guide to things to do and places to eat around Kigali, Rwanda.
+# 🌍 Kigali Unlocked
 
-Project Description
+> *Your ultimate guide to things to do and places to eat around Kigali, Rwanda.*
 
-Kigali Unlocked is a multi-page HTML and CSS website that showcases the best destinations, activities, restaurants, and markets in Kigali — Rwanda's vibrant capital city.
+---
 
-The project demonstrates mastery of core HTML structure and CSS styling techniques including Flexbox, Grid, animations, and responsive design.
+## 👋 About This Project
 
-HTML Pages Included
-PageFileDescriptionHomeindex.htmlLanding page with overview, destination cards, tips table, and newsletter formNyamirambonyamirambo.htmlGuide to Kigali's most authentic neighbourhoodCity Tourkigali-city-tour.htmlKey landmarks, history, and a suggested full-day itineraryEat & Drinkrestaurants.htmlTop restaurants, street food, and Rwandan cuisine guideKimironkokimironko.htmlGuide to Kigali's largest open-air market
+**Kigali Unlocked** is a multi-page HTML and CSS website that showcases the best destinations, activities, restaurants, and markets in Kigali — Rwanda's vibrant and beautiful capital city. 🇷🇼
 
-CSS Files
-Each HTML page has its own dedicated CSS file in the /css folder:
+I built this project as part of my Frontend Web Development course, and honestly? I'm proud of every single page! this project is a love letter to Kigali.
 
-css/home.css
-css/nyamirambo.css
-css/city-tour.css
-css/restaurants.css
-css/kimironko.css
+The design concept is **"Dark Kigali After Hours"** — a sophisticated, editorial aesthetic that captures the city's energy after sunset. 
 
-HTML Elements Used
-This project demonstrates use of the following HTML elements across all pages:
+Typography pairs the editorial **Playfair Display** serif for headings with the clean **DM Sans** for body text — elegant, readable, and full of character.
 
-✅ Semantic structure: <header>, <nav>, <section>, <article>, <footer>
-✅ Images (<img>) — 10+ images across all pages
-✅ Internal links — navigation between all 5 pages
-✅ External links — links to Visit Rwanda, Nyamirambo Women's Center
-✅ Ordered list (<ol>) — top spots, rankings, tips
-✅ Unordered list (<ul>) — must-try foods, items to bring, drinks
-✅ Tables (<table>) — visitor tips, price guides, tour schedules
-✅ Video element (<video>) — on each destination page
-✅ Audio element (<audio>) — on each destination page
-✅ Embedded iframe — OpenStreetMap embeds on all pages
-✅ Forms — newsletter form, reservation form, contact form
+---
 
-Design Story
-The design concept is "Dark Kigali After Hours" — a sophisticated, editorial aesthetic that evokes the city's energy after sunset. Deep blacks and charcoals form the base, punctuated by a warm gold accent (#c8a96e) that references Rwandan craftsmanship, woven baskets, and the golden savanna light. Typography pairs the editorial Playfair Display serif for headings with the clean DM Sans for body text.
+## 🗺️ Pages Included
 
-Student Information
+| Page | File | What's Inside |
+|------|------|---------------|
+| 🏠 Home | `index.html` | Landing page with destination cards, visitor tips table, and a newsletter form |
+| 🕌 Nyamirambo | `nyamirambo.html` | Guide to Kigali's most authentic and lively neighbourhood |
+| 🚌 City Tour | `kigali-city-tour.html` | Key landmarks, history, audio guide, and a full-day itinerary |
+| 🍽️ Eat & Drink | `restaurants.html` | Top restaurants, street food spots, and a Rwandan cuisine guide |
+| 🛒 Kimironko | `kimironko.html` | Guide to Kigali's largest and most colourful open-air market |
 
-Student Name: Umutoni Nada
-Course: Frontend web development – Cohort #16
+---
 
-Resources Used
+## 🎨 CSS Files
 
-W3Schools HTML Tutorial
-W3Schools CSS Tutorial
-Google Fonts
-Unsplash — free photography
-OpenStreetMap — embedded maps
+Each page has its own dedicated stylesheet, kept clean and organised inside the `/css` folder:
+
+```
+css/
+├── home.css
+├── nyamirambo.css
+├── city-tour.css
+├── restaurants.css
+└── kimironko.css
+```
+
+---
+
+## 🛠️ HTML Elements Used
+
+This project demonstrates a wide range of HTML elements across all pages:
+
+- ✅ **Semantic structure** — `<header>`, `<nav>`, `<section>`, `<article>`, `<footer>`
+- ✅ **Images** (`<img>`) — 10+ images across all pages
+- ✅ **Internal links** — smooth navigation between all 5 pages
+- ✅ **External links** — Nyamirambo Women's Center
+- ✅ **Ordered lists** (`<ol>`) — top spots, rankings, and tips
+- ✅ **Unordered lists** (`<ul>`) — must-try foods, packing lists, drinks
+- ✅ **Tables** (`<table>`) — visitor tips, price guides, tour schedules
+- ✅ **Video element** (`<video>`) — on restaurant page
+- ✅ **Audio element** (`<audio>`) — on kigali city tour page
+- ✅ **Embedded iframe** — OpenStreetMap embeds on all pages
+- ✅ **Forms** — reservation form and contact form
+
+---
+
+## 💅 CSS Techniques Used
+
+- 📐 **Flexbox** — for navigation, cards, and content alignment
+- 🔲 **CSS Grid** — for multi-column page layouts
+- 🎞️ **Animations & transitions** — hover effects and smooth interactions
+- 📱 **Responsive design** — works across desktop, tablet, and mobile screens
+
+---
+
+## 🚀 Live Demo
+
+👉 **[View the live site here](https://umutoni123-aa.github.io/Practical-assignment)**
+
+---
+
+## 💻 Run It Locally
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/Umutoni123-aa/Practical-assignment.git
+   ```
+
+2. **Open the folder in VS Code**
+
+3. **Launch with Live Server**
+   - Right-click `index.html` → **Open with Live Server**
+
+No installs, no setup — just open and explore! 
+
+---
+
+## 📁 Project Structure
+
+```
+Practical-assignment/
+│
+├── 📄 index.html
+├── 📄 nyamirambo.html
+├── 📄 kigali-city-tour.html
+├── 📄 restaurants.html
+├── 📄 kimironko.html
+│
+├── 📂 css/
+│   ├── home.css
+│   ├── nyamirambo.css
+│   ├── city-tour.css
+│   ├── restaurants.css
+│   └── kimironko.css
+│
+├── 📄 audio/
+│
+└── 📄 README.md
+```
+
+---
+
+## 🙏 Resources & Credits
+
+| Resource | How I Used It |
+|----------|---------------|
+| [Unsplash] | High-quality destination photos |
+| [Google Images]| Additional page imagery |
+| [OpenStreetMap]| Embedded maps on all pages |
+| [Google Fonts] | Playfair Display & DM Sans typography |
+| [W3Schools] | Reference and learning HTML & CSS concepts |
+| AI | FOR PERFECTING THE README.md FILE |
+
+---
+
+## 👩‍💻 Student Information
+
+| | |
+|---|---|
+| **Name** | Umutoni Nada |
+| **Course** | Frontend Web Development |
+| **Cohort** | #16 |
+| **GitHub** | [@Umutoni123-aa](https://github.com/Umutoni123-aa) |
+
+---
+
+<div align="center">
+
+Built with 💛 and a whole lot of love for **Kigali**
+
+*Murakoze cyane — Thank you so much for visiting!* 🙏🇷🇼
+
+</div>
