@@ -12,7 +12,15 @@
   <!-- NAV -->
   <nav class="navbar">
     <div class="nav-logo">KIGALI <span>UNLOCKED</span></div>
+
+    <!-- Hamburger button: only visible on mobile -->
+    <button class="nav-toggle" aria-label="Open menu">☰</button>
+
     <ul class="nav-links">
+      <!-- Close button inside the mobile menu -->
+      <li class="nav-close-wrap">
+        <button class="nav-close" aria-label="Close menu">✕</button>
+      </li>
       <li><a href="index.html">Home</a></li>
       <li><a href="nyamirambo.html" class="active">Nyamirambo</a></li>
       <li><a href="kigali-city-tour.html">City Tour</a></li>
@@ -81,25 +89,29 @@
 
     </div>
   </section>
+
   <!-- TABLE: GETTING AROUND -->
   <section class="table-section">
     <h2 class="section-title">Getting to Nyamirambo</h2>
-    <table class="info-table">
-      <thead>
-        <tr>
-          <th>Transport</th>
-          <th>From City Centre</th>
-          <th>Approx. Cost (RWF)</th>
-          <th>Duration</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Moto-taxi</td><td>Downtown Kigali</td><td>700 – 1,500</td><td>10–15 min</td></tr>
-        <tr><td>Taxi</td><td>Kacyiru / CBD</td><td>2,000 – 4,000</td><td>15–20 min</td></tr>
-        <tr><td>Bus (Tap&Go)</td><td>Nyabugogo terminal</td><td>300 – 600</td><td>20–30 min</td></tr>
-        <tr><td>Walking</td><td>Nyabugogo area</td><td>Free</td><td>30–40 min</td></tr>
-      </tbody>
-    </table>
+    <!-- Wrapper lets the table scroll sideways on small screens -->
+    <div class="table-wrapper">
+      <table class="info-table">
+        <thead>
+          <tr>
+            <th>Transport</th>
+            <th>From City Centre</th>
+            <th>Approx. Cost (RWF)</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Moto-taxi</td><td>Downtown Kigali</td><td>700 – 1,500</td><td>10–15 min</td></tr>
+          <tr><td>Taxi</td><td>Kacyiru / CBD</td><td>2,000 – 4,000</td><td>15–20 min</td></tr>
+          <tr><td>Bus (Tap&Go)</td><td>Nyabugogo terminal</td><td>300 – 600</td><td>20–30 min</td></tr>
+          <tr><td>Walking</td><td>Nyabugogo area</td><td>Free</td><td>30–40 min</td></tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
   <!-- LISTS -->
@@ -160,6 +172,27 @@
       <p class="footer-note">© Umutoni Nada · Kigali, Rwanda · 2026</p>
     </div>
   </footer>
+
+  <!-- JAVASCRIPT: hamburger menu -->
+  <script>
+    const toggleBtn = document.querySelector('.nav-toggle');
+    const closeBtn  = document.querySelector('.nav-close');
+    const navLinks  = document.querySelector('.nav-links');
+
+    toggleBtn.addEventListener('click', function() {
+      navLinks.classList.add('open');
+    });
+
+    closeBtn.addEventListener('click', function() {
+      navLinks.classList.remove('open');
+    });
+
+    navLinks.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        navLinks.classList.remove('open');
+      });
+    });
+  </script>
 
 </body>
 </html>

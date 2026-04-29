@@ -5,14 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kigali Unlocked – Discover Rwanda's Capital</title>
   <link rel="stylesheet" href="css/home.css" />
+  <!-- Google Fonts: Playfair Display for headings, DM Sans for body text -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
-  <!-- NAV -->
+  <!-- =====================
+       NAVBAR (top menu bar)
+  ===================== -->
   <nav class="navbar">
     <div class="nav-logo">KIGALI <span>UNLOCKED</span></div>
+
+    <!-- Hamburger button on mobile -->
+    <button class="nav-toggle" aria-label="Open menu">☰</button>
+
     <ul class="nav-links">
+      <!-- Close button inside the mobile menu -->
+      <li class="nav-close-wrap">
+        <button class="nav-close" aria-label="Close menu">✕</button>
+      </li>
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="nyamirambo.html">Nyamirambo</a></li>
       <li><a href="kigali-city-tour.html">City Tour</a></li>
@@ -21,25 +32,32 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
+  <!-- =====================
+       HERO (big banner section)
+  ===================== -->
   <header class="hero">
     <div class="hero-overlay"></div>
+
     <div class="hero-content">
       <p class="hero-tag">Rwanda's Heartbeat</p>
       <h1 class="hero-title">Discover<br/><span>Kigali</span></h1>
       <p class="hero-subtitle">A city of hills, culture, flavour, and life. Your ultimate guide to the best of Rwanda's capital.</p>
       <a href="nyamirambo.html" class="btn-primary">Start Exploring</a>
     </div>
+
+    <!--scroll hint at the bottom of the hero -->
     <div class="hero-scroll">↓ scroll</div>
   </header>
 
-  <!-- INTRO -->
+  <!--  INTRO (welcome text + stats) -->
   <section class="intro">
     <div class="intro-text">
       <h2>Welcome to the City of a Thousand Hills</h2>
-      <p>Kigali is one of Africa's most vibrant, clean, and fast-growing cities. Whether you're looking for local street food, cultural landmarks, lively markets, or rooftop bars with panoramic views — this guide has everything you need to make the most of your visit.</p>
+      <p>Kigali is one of Africa's most vibrant, clean, and fast-growing cities. Whether you're looking for local street food, cultural landmarks, lively markets, or rooftop bars with panoramic views — this guide has everything you need.</p>
       <p>Browse our curated destination pages to plan your perfect Kigali experience.</p>
     </div>
+
+    <!-- 4 number stats in a 2x2 grid -->
     <div class="intro-stats">
       <div class="stat"><span>1.5M+</span><p>Residents</p></div>
       <div class="stat"><span>3</span><p>Districts</p></div>
@@ -48,7 +66,9 @@
     </div>
   </section>
 
-  <!-- DESTINATION CARDS -->
+  <!-- =====================
+       DESTINATION CARDS
+  ===================== -->
   <section class="destinations">
     <h2 class="section-title">Explore Destinations</h2>
     <p class="section-sub">Four handpicked sections of Kigali, each with its own character</p>
@@ -97,28 +117,36 @@
     </div>
   </section>
 
-  <!-- QUICK TIPS TABLE -->
+  <!-- =====================
+       QUICK TIPS TABLE
+  ===================== -->
   <section class="tips-section">
     <h2 class="section-title">Visitor Quick Tips</h2>
-    <table class="tips-table">
-      <thead>
-        <tr>
-          <th>Category</th>
-          <th>Information</th>
-          <th>Recommendation</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Currency</td><td>Rwandan Franc (RWF)</td><td>Carry cash for local markets</td></tr>
-        <tr><td>Language</td><td>Kinyarwanda, French, English</td><td>A few Kinyarwanda words go far!</td></tr>
-        <tr><td>Transport</td><td>Moto-taxis (motos), taxis, buses</td><td>Use SafeMotos app for safe rides</td></tr>
-        <tr><td>Best Time</td><td>June – September (dry season)</td><td>Ideal for outdoor activities</td></tr>
-        <tr><td>Plastic Bags</td><td>Banned in Rwanda</td><td>Bring reusable bags</td></tr>
-      </tbody>
-    </table>
+
+    <!-- Wrapper div makes the table scroll sideways on small screens -->
+    <div class="table-wrapper">
+      <table class="tips-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Information</th>
+            <th>Recommendation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Currency</td><td>Rwandan Franc (RWF)</td><td>Carry cash for local markets</td></tr>
+          <tr><td>Language</td><td>Kinyarwanda, French, English</td><td>A few Kinyarwanda words go far!</td></tr>
+          <tr><td>Transport</td><td>Moto-taxis, taxis, buses</td><td>Use SafeMotos app for safe rides</td></tr>
+          <tr><td>Best Time</td><td>June – September (dry season)</td><td>Ideal for outdoor activities</td></tr>
+          <tr><td>Plastic Bags</td><td>Banned in Rwanda</td><td>Bring reusable bags</td></tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
-  <!-- HIGHLIGHTS LIST -->
+  <!-- =====================
+       HIGHLIGHTS (two lists)
+  ===================== -->
   <section class="highlights">
     <div class="highlights-inner">
       <div class="highlights-col">
@@ -144,7 +172,9 @@
     </div>
   </section>
 
-  <!-- CONTACT / NEWSLETTER FORM -->
+  <!-- =====================
+       NEWSLETTER FORM
+  ===================== -->
   <section class="contact-section">
     <h2>Stay in the Loop</h2>
     <p>Get the latest travel tips and Kigali updates delivered to your inbox.</p>
@@ -163,7 +193,9 @@
     </div>
   </section>
 
-  <!-- MAP EMBED -->
+  <!-- =====================
+       MAP EMBED
+  ===================== -->
   <section class="map-section">
     <h2 class="section-title">Find Your Bearings</h2>
     <div class="map-container">
@@ -176,7 +208,9 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- =====================
+       FOOTER
+  ===================== -->
   <footer class="footer">
     <div class="footer-inner">
       <p class="footer-logo">KIGALI <span>UNLOCKED</span></p>
@@ -192,5 +226,28 @@
     </div>
   </footer>
 
+  <!-- =====================
+       JAVASCRIPT (hamburger menu)
+  ===================== -->
+  <script>
+    // Select the buttons and the nav menu
+    const toggleBtn = document.querySelector('.nav-toggle');
+    const closeBtn  = document.querySelector('.nav-close');
+    const navLinks  = document.querySelector('.nav-links');
+
+    toggleBtn.addEventListener('click', function() {
+      navLinks.classList.add('open');
+    });
+    closeBtn.addEventListener('click', function() {
+      navLinks.classList.remove('open');
+    });
+
+    // Close the menu when any link inside it is clicked
+    navLinks.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        navLinks.classList.remove('open');
+      });
+    });
+  </script>
 </body>
 </html>

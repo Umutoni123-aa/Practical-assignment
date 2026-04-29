@@ -19,6 +19,12 @@
       <li><a href="restaurants.html" class="active">Eat & Drink</a></li>
       <li><a href="kimironko.html">Kimironko</a></li>
     </ul>
+    <!-- Hamburger button -->
+    <button class="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <!-- Close button (inside the open menu) -->
+    <button class="nav-close" aria-label="Close menu">✕</button>
   </nav>
 
   <!-- PAGE HERO -->
@@ -63,9 +69,9 @@
           <span class="cuisine-tag">International / Rwandan</span>
           <p>Perched on a Kigali hilltop with breathtaking views, Heaven has long been considered one of the finest restaurants in the city. Their menu blends Rwandan ingredients with international technique. Don't miss the passion fruit mousse.</p>
           <div class="rest-details">
-            <span>📍 Kiyovu</span>
-            <span>⭐ 4.7</span>
-            <span>🕐 Noon–10pm</span>
+            <span> Kiyovu</span>
+            <span> 4.7</span>
+            <span> Noon–10pm</span>
           </div>
         </div>
       </div>
@@ -95,9 +101,9 @@
           <span class="cuisine-tag">Modern / Cocktails</span>
           <p>The coolest rooftop bar in the city. Located in Kimihurura, Inzora offers craft cocktails, mezze plates, and a DJ on weekends. The golden-hour views over Kigali's rolling hills are absolutely stunning.</p>
           <div class="rest-details">
-            <span>📍 Kimihurura</span>
-            <span>⭐ 4.6</span>
-            <span>🕐 4pm–Midnight</span>
+            <span> Kimihurura</span>
+            <span> 4.6</span>
+            <span> 4pm–Midnight</span>
           </div>
         </div>
       </div>
@@ -112,9 +118,9 @@
           <span class="cuisine-tag">Rwandan Street Food</span>
           <p>Skip the restaurants — the real Kigali food experience is on the streets of Nyamirambo. Charcoal-grilled brochettes, fried plantains, samosas, and cold Primus beers. Cheap, delicious, and authentic.</p>
           <div class="rest-details">
-            <span>📍 Nyamirambo</span>
-            <span>⭐ 4.9</span>
-            <span>🕐 5pm–Late</span>
+            <span> Nyamirambo</span>
+            <span> 4.9</span>
+            <span> 5pm–Late</span>
           </div>
         </div>
       </div>
@@ -163,12 +169,14 @@
   <section class="map-section">
     <h2 class="section-title">Restaurant District Map</h2>
     <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255203.55383057077!2d29.96243136624063!3d-1.9297626221657935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca4258ed8e797%3A0xf32b36a5411d0bc8!2sKigali!5e0!3m2!1sen!2srw!4v1777276050769!5m2!1sen!2srw"
-        width="100%" height="380" style="border:none;"
-        title="Kigali restaurant district"
-        loading="lazy">
-      </iframe>
+      <div class="table-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255203.55383057077!2d29.96243136624063!3d-1.9297626221657935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca4258ed8e797%3A0xf32b36a5411d0bc8!2sKigali!5e0!3m2!1sen!2srw!4v1777276050769!5m2!1sen!2srw"
+          width="100%" height="380" style="border:none;"
+          title="Kigali restaurant district"
+          loading="lazy">
+        </iframe>
+      </div>
     </div>
   </section>
 
@@ -186,6 +194,32 @@
       <p class="footer-note">© 2025 Kigali Unlocked. Made with ♥ in Rwanda.</p>
     </div>
   </footer>
+
+  <!-- MOBILE NAV SCRIPT -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navClose   = document.querySelector('.nav-close');
+    const navLinks   = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.add('open');
+      navClose.classList.add('visible');
+      hamburger.classList.add('hidden');
+    });
+
+    navClose.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navClose.classList.remove('visible');
+      hamburger.classList.remove('hidden');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navClose.classList.remove('visible');
+        hamburger.classList.remove('hidden');
+      });
+    });
+  </script>
 
 </body>
 </html>

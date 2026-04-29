@@ -12,7 +12,15 @@
   <!-- NAV -->
   <nav class="navbar">
     <div class="nav-logo">KIGALI <span>UNLOCKED</span></div>
+
+    <!-- Hamburger button: only visible on mobile -->
+    <button class="nav-toggle" aria-label="Open menu">☰</button>
+
     <ul class="nav-links">
+      <!-- Close button inside the mobile menu -->
+      <li class="nav-close-wrap">
+        <button class="nav-close" aria-label="Close menu">✕</button>
+      </li>
       <li><a href="index.html">Home</a></li>
       <li><a href="nyamirambo.html">Nyamirambo</a></li>
       <li><a href="kigali-city-tour.html" class="active">City Tour</a></li>
@@ -97,46 +105,49 @@
 
     </div>
   </section>
-  <!-- AUDIO -->
 
-<section class="audio-section">
-  <h2 class="section-title">Kigali vibe</h2>
-  <div class="audio-wrap">
-    <div class="audio-card">
-      <span>🎙️</span>
-      <div>
-        <p> Sample Audio</p>
-        <small>Drumbeat of traditional Rwandan culture</small>
+  <!-- AUDIO -->
+  <section class="audio-section">
+    <h2 class="section-title">Kigali vibe</h2>
+    <div class="audio-wrap">
+      <div class="audio-card">
+        <span>🎙️</span>
+        <div>
+          <p>Sample Audio</p>
+          <small>Drumbeat of traditional Rwandan culture</small>
+        </div>
+        <audio controls loop>
+          <source src="css/audioo.mp3" type="audio/mpeg"/>
+          Your browser does not support the audio element.
+        </audio>
       </div>
-      <audio controls loop>
-        <source src="css/audioo.mp3" type="audio/mpeg"/>
-        Your browser does not support the audio element.
-      </audio>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- TABLE: TOUR SCHEDULE -->
   <section class="table-section">
     <h2 class="section-title">Suggested Full-Day Tour Schedule</h2>
-    <table class="info-table">
-      <thead>
-        <tr>
-          <th>Time</th>
-          <th>Destination</th>
-          <th>Duration</th>
-          <th>Notes</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>8:00 AM</td><td>Kigali Genocide Memorial</td><td>2–3 hours</td><td>Take your time; emotionally heavy</td></tr>
-        <tr><td>11:00 AM</td><td>Inema Arts Centre</td><td>1 hour</td><td>Watch live painting sessions</td></tr>
-        <tr><td>12:30 PM</td><td>Lunch at Heaven Restaurant</td><td>1 hour</td><td>Stunning panoramic views</td></tr>
-        <tr><td>2:00 PM</td><td>Kigali Convention Centre</td><td>45 min</td><td>Great photo opportunity</td></tr>
-        <tr><td>3:00 PM</td><td>Nyamirambo Walking Tour</td><td>2 hours</td><td>Street food included</td></tr>
-        <tr><td>5:30 PM</td><td>Rooftop sundowner</td><td>Open-ended</td><td>Try Klab Rooftop Bar</td></tr>
-      </tbody>
-    </table>
+    <!-- Wrapper lets the table scroll sideways on small screens -->
+    <div class="table-wrapper">
+      <table class="info-table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Destination</th>
+            <th>Duration</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>8:00 AM</td><td>Kigali Genocide Memorial</td><td>2–3 hours</td><td>Take your time; emotionally heavy</td></tr>
+          <tr><td>11:00 AM</td><td>Inema Arts Centre</td><td>1 hour</td><td>Watch live painting sessions</td></tr>
+          <tr><td>12:30 PM</td><td>Lunch at Heaven Restaurant</td><td>1 hour</td><td>Stunning panoramic views</td></tr>
+          <tr><td>2:00 PM</td><td>Kigali Convention Centre</td><td>45 min</td><td>Great photo opportunity</td></tr>
+          <tr><td>3:00 PM</td><td>Nyamirambo Walking Tour</td><td>2 hours</td><td>Street food included</td></tr>
+          <tr><td>5:30 PM</td><td>Rooftop sundowner</td><td>Open-ended</td><td>Try Klab Rooftop Bar</td></tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
   <!-- LISTS -->
@@ -164,6 +175,7 @@
       </div>
     </div>
   </section>
+
   <!-- MAP EMBED -->
   <section class="map-section">
     <h2 class="section-title">Kigali City Centre Map</h2>
@@ -191,6 +203,27 @@
       <p class="footer-note">© Umutoni Nada · Kigali, Rwanda · 2026</p>
     </div>
   </footer>
+
+  <!-- JAVASCRIPT: hamburger menu -->
+  <script>
+    const toggleBtn = document.querySelector('.nav-toggle');
+    const closeBtn  = document.querySelector('.nav-close');
+    const navLinks  = document.querySelector('.nav-links');
+
+    toggleBtn.addEventListener('click', function() {
+      navLinks.classList.add('open');
+    });
+
+    closeBtn.addEventListener('click', function() {
+      navLinks.classList.remove('open');
+    });
+
+    navLinks.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        navLinks.classList.remove('open');
+      });
+    });
+  </script>
 
 </body>
 </html>
